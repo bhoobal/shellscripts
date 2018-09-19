@@ -1,0 +1,42 @@
+Create keypair
+use putty gen to create private and public key pair
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.html
+
+$ sudo adduser username
+
+for ubuntu
+
+sudo adduser username --disabled-password
+
+sudo su -username
+
+[newuser ~]$ mkdir .ssh
+[newuser ~]$ chmod 700 .ssh
+
+[newuser ~]$ touch .ssh/authorized_keys
+[newuser ~]$ chmod 600 .ssh/authorized_keys
+
+copy and paste public key 
+NOTE: MAKE sure the key pair text start with ssh  , other wise you will get server refused key error while loggin in with new user 
+
+
+Remove password
+
+ $ sudo passwd -d test
+ Removing password for user test.
+ passwd: Success
+ $ su test
+ $ whoami
+ 
+ 
+
+to delete user account
+
+sudo userdel -r olduser
+
+compgen -u
+Will lists all users.
+
+id
+
