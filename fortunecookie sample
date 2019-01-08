@@ -1,0 +1,47 @@
+
+Docker file
+
+FROM ubuntu:18.04                                                                                                     │
+RUN apt-get update                                                                                                    │
+RUN apt-get install fortune -y                                                                                        │
+ENV PATH=$PATH:/usr/games/                                                                                            │
+COPY ./fortunebatch.sh .                                                                                              │
+ENTRYPOINT "./fortunebatch.sh"
+
+shell script
+
+root@BPALANI-IN-LE02:/dockersamples# cat fortunebatch.sh                                                              │
+#!/bin/sh                                                                                                             │
+echo "hello shell"                                                                                                    │
+cd /usr/games/                                                                                                        │
+export  PATH="/usr/games/:$PATH"                                                                                      │
+watch -n 1 fortune
+
+
+
+
+docker build -f DockerFile -t fortunesample:latest .                                                           │root@BPALANI-IN-LE02:/dockersamples# docker ps
+  316  nano DockerFile                                                                                                │CONTAINER ID        IMAGE               COMMAND                   CREATED             STATUS              PORTS
+  317  nano DockerFile                                                                                                │        NAMES
+  318  docker build -f DockerFile -t fortunesample:latest .                                                           │5d973c7a3474        fortunesample       "/bin/sh -c \"./fortu…"   29 seconds ago      Up 26 seconds
+  319  docker run fortunesample                                                                                       │        zen_wu
+  320  nano DockerFile                                                                                                │root@BPALANI-IN-LE02:/dockersamples# docker logs 5d973c7a3474
+  321  docker build -f DockerFile -t fortunesample:latest .                                                           │hello shell
+  322  docker run fortunesample                                                                                       │root@BPALANI-IN-LE02:/dockersamples# docker logs 5d973c7a3474 | grep *e
+  323  tmux                                                                                                           │root@BPALANI-IN-LE02:/dockersamples# docker logs 5d973c7a3474 | grep e
+  324  tmux                                                                                                           │hello shell
+  325  tmux                                                                                                           │root@BPALANI-IN-LE02:/dockersamples# docker logs 5d973c7a3474 | grep e | wc -l
+  326  tmux                                                                                                           │1
+  327  exit                                                                                                           │root@BPALANI-IN-LE02:/dockersamples# docker logs 5d973c7a3474 | grep l | wc -l
+  328  %                                                                                                              │1
+  329  ls                                                                                                             │root@BPALANI-IN-LE02:/dockersamples#
+  330  docker run -it fortunesample                                                                                   │root@BPALANI-IN-LE02:/dockersamples#
+  331  nano DockerFile                                                                                                │root@BPALANI-IN-LE02:/dockersamples#
+  332  echo ./fortunebatch.sh                                                                                         │
+  333  echo ./fortunebatch.sh                                                                                         │
+  334  docker run -it fortunesample                                                                                   │
+  335  ls                                                                                                             │
+  336  cat DockerFile                                                                                                 │
+  337  history
+  
+
