@@ -7,3 +7,7 @@ $ openssl s_client -connect www.domain.com:443 -tls1_2
 
 $ sudo apt install nmap
 $ nmap --script ssl-enum-ciphers -p 443 www.domain.com
+
+
+http://web.mit.edu/~linux/docs/howto/Adv-Bash-Scr-HOWTO
+
