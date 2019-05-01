@@ -1,5 +1,22 @@
 # shellscripts
-linux/ubuntu shell scripts
+linux/ubuntu commands and shell scripts
+
+df
+
+change file attribute
+
+chmod +777 Dockerfile && ls -l
+chmod -777 Dockerfile && ls -l
+
+FIle statistics
+
+stat Dockerfile
+stat Dockerfile -f
+
+History with out line numbers
+
+history | cut -c 8-
+
 
 SSL cipher checks
 
@@ -10,4 +27,6 @@ $ nmap --script ssl-enum-ciphers -p 443 www.domain.com
 
 
 http://web.mit.edu/~linux/docs/howto/Adv-Bash-Scr-HOWTO
+
+
 
