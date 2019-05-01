@@ -3,17 +3,17 @@
 
 df
 
-**change file attribute
+**change file attribute**
 
 chmod +777 Dockerfile && ls -l
 chmod -777 Dockerfile && ls -l
 
-**File statistics
+**File statistics**
 
 stat Dockerfile
 stat Dockerfile -f
 
-**History with out line numbers
+**History with out line numbers**
 
 history | cut -c 8-
 
