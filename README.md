@@ -1,19 +1,19 @@
 # shellscripts
-linux/ubuntu commands and shell scripts
+**linux/ubuntu commands and shell scripts**
 
 df
 
-change file attribute
+**change file attribute
 
 chmod +777 Dockerfile && ls -l
 chmod -777 Dockerfile && ls -l
 
-FIle statistics
+**File statistics
 
 stat Dockerfile
 stat Dockerfile -f
 
-History with out line numbers
+**History with out line numbers
 
 history | cut -c 8-
 
