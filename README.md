@@ -1,6 +1,7 @@
 # Commands and shellscripts
 **linux/ubuntu commands and shell scripts**
 
+[https://dev.to/bobbyiliev/the-only-bash-scripting-cheat-sheet-that-you-will-ever-need-55c7]
 df
 
 **change file attribute**
