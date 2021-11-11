@@ -19,6 +19,7 @@ stat Dockerfile -f
 history | cut -c 8-
 
 
+
 SSL cipher checks
 
 $ openssl s_client -connect www.domain.com:443 -tls1_2
@@ -29,5 +30,8 @@ $ nmap --script ssl-enum-ciphers -p 443 www.domain.com
 
 http://web.mit.edu/~linux/docs/howto/Adv-Bash-Scr-HOWTO
 
+# received a archieve file .lz to extract 
+## install --  sudo apt-get install lzip
+## extract --  tar xvf gmp-5.1.3.tar.lz
 
 
