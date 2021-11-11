@@ -30,7 +30,7 @@ $ nmap --script ssl-enum-ciphers -p 443 www.domain.com
 
 http://web.mit.edu/~linux/docs/howto/Adv-Bash-Scr-HOWTO
 
-# received a archieve file .lz to extract 
+# received an archieve file .lz to extract 
 install --  sudo apt-get install lzip
 extract --  tar xvf gmp-5.1.3.tar.lz
 
