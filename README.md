@@ -4,6 +4,9 @@
 [https://dev.to/bobbyiliev/the-only-bash-scripting-cheat-sheet-that-you-will-ever-need-55c7]
 df
 
+# shell script example
+https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+
 **change file attribute**
 
 chmod +777 Dockerfile && ls -l
