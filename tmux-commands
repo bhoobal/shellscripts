@@ -13,6 +13,12 @@ $exit to exit tmux
 tmux cheatsheet
 As configured in my dotfiles.
 
+# to switch between sessions/pane
+  Ctrl + b and q - this shows identifier on the pane and hit pane number 0,1 or 2
+  
+# to kill a pane
+Ctrl + b and x to kill 
+  
 start new:
 
 tmux
