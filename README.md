@@ -37,4 +37,7 @@ http://web.mit.edu/~linux/docs/howto/Adv-Bash-Scr-HOWTO
 install --  sudo apt-get install lzip
 extract --  tar xvf gmp-5.1.3.tar.lz
 
+# vi - open file at specific word on the file
 
+ - vi +/10.135.20.9 known_hosts
+ 
